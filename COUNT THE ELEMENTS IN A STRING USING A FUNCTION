@@ -1,0 +1,12 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int countelements(string str){
+	return str.length();
+}
+int main(){
+	string str="durga";
+	cout<<"the count of the lements is:"<<countelements(str)<<endl;
+	return 0;
+}
+
