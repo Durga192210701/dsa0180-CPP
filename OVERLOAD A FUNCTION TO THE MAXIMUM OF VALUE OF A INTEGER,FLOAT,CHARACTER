@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int max(int a,int b){
+	return (a>b)?a:b;
+}
+float max(float a,float b){
+	return(a>b)?a:b;
+}
+char max(char a,char b){
+	return(a>b)?a:b;
+}
+int main(){
+	int intmax=max(5,3);
+	float floatmax=max(5.5f,9.9f);
+	char charmax=max('a','s');
+	cout<<"the integer is:"<<intmax<<endl;
+	cout<<"the float number is:"<<floatmax<<endl;
+	cout<<"the character is:"<<charmax<<endl;
+	return 0;
+}
+
