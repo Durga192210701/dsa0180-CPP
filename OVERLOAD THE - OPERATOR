@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class counter{
+	int value;
+	public:
+		counter(int val=0):value(val){}
+		counter &operator++(){
+			value++;
+			return *this;
+		}
+		counter operator++(int){
+			counter temp=*this;
+			value++;
+			return temp;
+		}
+		counter operator-(int multiplier){
+			return counter(value-multiplier);
+		}
+		void display() const{
+			cout<<"the value is:"<<value<<endl;
+		}
+	};
+	int main(){
+		counter c(5);
+		c.display();
+		++c;
+		c.display();
+		c++;
+		c.display();
+		counter c2=c-3;
+		c2.display();
+		return 0;
+	}
+	
+	
